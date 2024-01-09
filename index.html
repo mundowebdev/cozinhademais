@@ -2,6 +2,7 @@
 <html lang="">
 
 <head>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <meta charset="utf-8">
   <meta name="language" content="pt-BR">
   <title>Cozinha Demais - Web Stories</title>
@@ -11,6 +12,7 @@
   <meta name="author" content="Cozinha Demais">
   <meta name="keywords"
     content="web stories, cozinha demais, receitas, culinária, receitas fáceis, receita fácil de fazer, melhores receitas, receitas na airfryer">
+  <link rel="canonical" href="https://web-stories.cozinhademais.com.br/" />
 
   <meta property="og:type" content="page">
   <meta property="og:url" content="https://web-stories.cozinhademais.com.br/">
@@ -37,6 +39,10 @@
   <link href='https://web-stories.cozinhademais.com.br/logo/cozinha-demais-16x16.png' rel='icon' sizes='16x16'
     type='image/png' />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,7 +54,7 @@
       "sameAs": [
         "https://www.facebook.com/blogcozinhademais",
         "https://twitter.com/cozinhademais",
-        "https://www.instagram.com/cozinhademaisblog/"
+        "https://www.instagram.com/cozinhademaisblog"
       ]
     }
   </script>
@@ -66,11 +72,308 @@
       }
     }
   </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Adamina', serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0865db;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #0865db;
+    }
+
+    header {
+      height: 370px;
+    }
+
+    #banner {
+      height: 300px;
+      overflow-y: hidden;
+    }
+
+    #banner img {
+      width: 100%;
+      height: auto;
+    }
+
+    #logo {
+      position: relative;
+      top: -80px;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      box-shadow: 0 0 6px -1px rgb(0, 0, 0, 0.3);
+    }
+
+    #logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1,
+    h4 {
+      text-align: center;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin-top: 0px;
+    }
+
+    #social {
+      margin: 15px 0 30px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    #social:hover a {
+      text-decoration: none;
+    }
+
+    .social-icone {
+      font-weight: bold;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      border: 1px solid #ddd;
+      border-radius: 30px;
+    }
+
+    .social-icone img {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+    }
+
+    #descricao {
+      max-width: 800px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #descricao p {
+      color: #5c5c5c;
+      font-size: 19px;
+      text-align: center;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    #web-stories {
+      padding: 30px 0;
+      border-top: 1px solid #eee;
+      margin: 30px 0 55px;
+    }
+
+    #web-stories-blocos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0 15px;
+    }
+
+    .bloco {
+      position: relative;
+      width: 20%;
+      height: 311px;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    .imagem {
+      background-color: #eee;
+      position: relative;
+      z-index: 2;
+      padding-bottom: 133.5%;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .imagem img {
+      filter: brightness(0.8);
+      position: absolute;
+      left: -50%;
+      top: 0;
+      width: auto;
+      height: 100%;
+      transition: .3s all;
+    }
+
+    .imagem:hover img {
+      transform: scale(1.2);
+    }
+
+    .img-titulo {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 10px 0;
+      background-color: rgb(0 0 0 / 70%);
+      border-radius: 0 0 10px 10px;
+      width: 100%;
+      transition: .3s all;
+    }
+
+    .imagem:hover .img-titulo {
+      background-color: rgb(0 0 0 / 75%);
+      z-index: 2;
+    }
+
+    .img-titulo::before {
+      content: "";
+      background: linear-gradient(to top, rgba(0, 0, 0, 73%), transparent);
+      width: 100%;
+      position: absolute;
+      top: -50px;
+      height: 50px;
+    }
+
+    .img-titulo span {
+      font-size: 20px;
+      font-weight: 500;
+      padding: 0 5px 0 10px;
+      color: #FFF;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+    }
+
+    .play-btn-icon {
+      display: none;
+      background-color: rgb(0 0 0 / 30%);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      transition: .3s all;
+    }
+
+    .play-btn-icon svg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      top: 40%;
+      z-index: 3;
+    }
+
+    .imagem:hover .play-btn-icon {
+      display: block;
+    }
+
+    @media (min-width: 760px) and (max-width: 991.98px) {
+      .bloco {
+        width: 25%;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .bloco {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .bloco {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header></header>
-  <main></main>
+  <header>
+    <div id="banner">
+      <img alt="Banner para o site Cozinha Demais - Web Stories" src="logo/cozinha-demais-site-banner.png" />
+    </div>
+    <div id="logo">
+      <img alt="" src="logo/cozinha-demais.jpeg" />
+    </div>
+  </header>
+  <main>
+    <div id="titulo">
+      <h1>Cozinha Demais - Web Stories</h1>
+      <h4>Criado por <a href="https://www.cozinhademais.com.br/">Cozinha Demais</a></h4>
+    </div>
+
+    <div id="social">
+      <a href="https://www.facebook.com/blogcozinhademais" target="_blank">
+        <div class="social-icone">
+          <img alt="Cozinha Demais no Facebook" src="logo/facebook-logo.png" /> Facebook
+        </div>
+      </a>
+      <a href="https://www.instagram.com/cozinhademaisblog" target="_blank">
+        <div class="social-icone">
+          <img alt="Cozinha Demais no Instagram" src="logo/instagram-logo.png" /> Instagram
+        </div>
+      </a>
+    </div>
+
+    <div id="descricao">
+      <p>Encontre deliciosas receitas para surpreender a todos e descubra os melhores produtos para sua cozinha com os
+        nossos guias de compra.</p>
+    </div>
+
+    <div id="web-stories">
+      <div id="web-stories-blocos">
+        <div class="bloco">
+          <a href="https://web-stories.cozinhademais.com.br/assados/fraldinha-no-alho-assada-na-airfryer/">
+            <div class="imagem">
+              <span class="play-btn-icon"> <svg width="15%" height="15%" preserveAspectRatio="none" viewBox="0 0 30 46"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 23L0 45.5167L0 0.483339L30 23Z" fill="#FAF9F9"></path>
+                </svg> </span>
+              <img
+                src="https://web-stories.cozinhademais.com.br/assados/fraldinha-no-alho-assada-na-airfryer/assets/receita-de-fraldinha-no-alho-assada-na-air-fryer.webp"
+                alt="Fraldinha no alho assada na airfryer">
+
+              <div class="img-titulo">
+                <span>Fraldinha no alho assada na airfryer</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="bloco">
+          <div></div>
+        </div>
+        <div class="bloco">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </main>
   <footer></footer>
 </body>
 
