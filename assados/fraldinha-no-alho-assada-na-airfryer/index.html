@@ -225,13 +225,23 @@
     }
 
     #backg-logo {
-      left: 0px;
-      top: 0%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
       width: 228px;
       height: 50px;
       padding: 0px;
       background-color: #fff;
+      border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
+      margin-top: 80px;
+    }
+
+    #backg-logo-img {
+      width: 200px;
+      height: auto;
     }
 
     .lqcdu>amp-img.img-fill>img {
@@ -566,6 +576,10 @@
       left: 0;
     }
 
+    #main-box-capa .letterbox {
+      display: block;
+    }
+
     .div-text svg {
       opacity: 95%;
     }
@@ -583,6 +597,15 @@
       box-sizing: border-box;
     }
 
+    #caixa-do-titulo {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 192px;
+      margin-bottom: 60px;
+    }
+
     h1 {
       left: 0;
       bottom: 0;
@@ -595,7 +618,6 @@
       line-height: 1.3em;
       background: #00b04e;
       padding: 15px 15px 15px 15px;
-      margin-bottom: 60px;
     }
 
     h2 {
@@ -622,7 +644,7 @@
 
     .p-home {
       left: 0;
-      top: 60.17%;
+      top: 0;
       width: 61.94%;
       color: #2e323b;
       font-family: Adamina;
@@ -730,14 +752,15 @@
       <amp-story-grid-layer template="vertical" class="fix-amp-story-grid-layer">
         <div id="main-box-capa">
           <div class="letterbox">
-            <h1 class="pa"><br>Fraldinha no alho assada na airfryer</h1>
-            <div id="backg-logo" class="pa svg-el"></div>
-            <p class="p-home pa">Receita rápida e fácil de fazer</p>
-            <div class="lqcdu pa">
-              <amp-img width="343" height="50" layout="responsive" class="img-fill pa"
+            <div id="backg-logo">
+              <amp-img width="343" height="50" layout="responsive" id="backg-logo-img"
                 src="https://web-stories.cozinhademais.com.br/logo/cozinha-demais-logo-site.png"
                 alt="Logo do site de receitas Cozinha Demais">
               </amp-img>
+            </div>
+            <div id="caixa-do-titulo">
+              <h1 class="pa"><br>Fraldinha no alho assada na airfryer</h1>
+              <p class="p-home pa">Receita rápida e fácil de fazer</p>
             </div>
           </div>
         </div>
