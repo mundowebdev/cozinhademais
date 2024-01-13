@@ -558,6 +558,13 @@
       align-content: unset;
     }
 
+    .main-box {
+      display: grid;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
     #main-box-capa {
       display: block;
       position: relative;
@@ -574,6 +581,10 @@
       height: 100%;
       top: 0;
       left: 0;
+    }
+
+    .tela-final {
+      position: absolute;
     }
 
     #main-box-capa .letterbox {
@@ -602,17 +613,17 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 250px;
+      height: 230px;
     }
 
     h1 {
       top: 42px;
       left: 0;
-      max-width: 267px;
+      max-width: 290px;
       color: #fff;
       font-family: Adamina;
       font-weight: 400;
-      font-size: 26px;
+      font-size: 28px;
       letter-spacing: .03em;
       line-height: 1.3em;
       background: #00b04e;
@@ -644,11 +655,11 @@
     .p-home {
       left: 0;
       top: 0;
-      width: 200px;
+      width: 210px;
       color: #2e323b;
       font-family: Adamina;
       font-weight: 700;
-      font-size: 19px;
+      font-size: 20px;
       letter-spacing: .05em;
       line-height: 1.3em;
       background: #f7a46c;
@@ -791,13 +802,15 @@
       </amp-story-grid-layer>
 
       <amp-story-grid-layer template="vertical" id="ifpdr">
-        <div class="letterbox">
-          <div class="div-text">
-            <h2>Informações</h2>
-            <p>Tempo de preparo: 50 minutos.<br />
-              Rendimento: 4 porções.<br />
-              Receita fácil.
-            </p>
+        <div class="main-box">
+          <div class="letterbox">
+            <div class="div-text">
+              <h2>Informações</h2>
+              <p>Tempo de preparo: 50 minutos.<br />
+                Rendimento: 4 porções.<br />
+                Receita fácil.
+              </p>
+            </div>
           </div>
         </div>
       </amp-story-grid-layer>
@@ -817,13 +830,15 @@
       </amp-story-grid-layer>
 
       <amp-story-grid-layer template="vertical" id="qquol">
-        <div class="letterbox">
-          <div class="div-text">
-            <h2>Ingredientes</h2>
-            <p class="ingredient">- 1kg de fraldinha</p>
-            <p class="ingredient">- 2 colheres (sopa) de manteiga (ou margarina)</p>
-            <p class="ingredient">- 5 dentes de alho amassado</p>
-            <p class="ingredient">- Sal e pimenta-do-reino a gosto</p>
+        <div class="main-box">
+          <div class="letterbox">
+            <div class="div-text">
+              <h2>Ingredientes</h2>
+              <p class="ingredient">- 1kg de fraldinha</p>
+              <p class="ingredient">- 2 colheres (sopa) de manteiga (ou margarina)</p>
+              <p class="ingredient">- 5 dentes de alho amassado</p>
+              <p class="ingredient">- Sal e pimenta-do-reino a gosto</p>
+            </div>
           </div>
         </div>
       </amp-story-grid-layer>
@@ -843,19 +858,21 @@
       </amp-story-grid-layer>
 
       <amp-story-grid-layer template="vertical" id="ckkxb">
-        <div class="letterbox">
-          <div class="div-text">
-            <h2>Modo de fazer</h2>
+        <div class="main-box">
+          <div class="letterbox">
+            <div class="div-text">
+              <h2>Modo de fazer</h2>
 
-            <div class="step svg-el">
-              <svg preserveAspectRatio="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="50" cy="50" rx="50" ry="50" fill="rgba(0,176,78,1)"></ellipse>
-              </svg>
-              <span class="step-number">1</span>
+              <div class="step svg-el">
+                <svg preserveAspectRatio="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="50" cy="50" rx="50" ry="50" fill="rgba(0,176,78,1)"></ellipse>
+                </svg>
+                <span class="step-number">1</span>
+              </div>
+
+              <p>Tempere a fraldinha com o sal e pimenta-do-reino a gosto. Misture bem as 2 colheres de manteiga com o
+                alho amassado até formar uma pasta. Passe a pasta na carne, espalhando bem.</p>
             </div>
-
-            <p>Tempere a fraldinha com o sal e pimenta-do-reino a gosto. Misture bem as 2 colheres de manteiga com o
-              alho amassado até formar uma pasta. Passe a pasta na carne, espalhando bem.</p>
           </div>
         </div>
       </amp-story-grid-layer>
@@ -875,19 +892,21 @@
       </amp-story-grid-layer>
 
       <amp-story-grid-layer template="vertical" id="nkdxt">
-        <div class="letterbox">
-          <div class="div-text">
-            <h2>Modo de fazer</h2>
+        <div class="main-box">
+          <div class="letterbox">
+            <div class="div-text">
+              <h2>Modo de fazer</h2>
 
-            <div class="step svg-el">
-              <svg preserveAspectRatio="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="50" cy="50" rx="50" ry="50" fill="rgba(0,176,78,1)"></ellipse>
-              </svg>
-              <span class="step-number">2</span>
+              <div class="step svg-el">
+                <svg preserveAspectRatio="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="50" cy="50" rx="50" ry="50" fill="rgba(0,176,78,1)"></ellipse>
+                </svg>
+                <span class="step-number">2</span>
+              </div>
+
+              <p>Leve a carne para a airfryer, que deverá estar preaquecida a 200°C por 5 minutos, com a gordura virada
+                para cima. Deixe assar por 15 minutos.</p>
             </div>
-
-            <p>Leve a carne para a airfryer, que deverá estar preaquecida a 200°C por 5 minutos, com a gordura virada
-              para cima. Deixe assar por 15 minutos.</p>
           </div>
         </div>
       </amp-story-grid-layer>
@@ -907,19 +926,21 @@
       </amp-story-grid-layer>
 
       <amp-story-grid-layer template="vertical" id="obutb">
-        <div class="letterbox">
-          <div class="div-text">
-            <h2>Modo de fazer</h2>
+        <div class="main-box">
+          <div class="letterbox">
+            <div class="div-text">
+              <h2>Modo de fazer</h2>
 
-            <div class="step svg-el">
-              <svg preserveAspectRatio="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="50" cy="50" rx="50" ry="50" fill="rgba(0,176,78,1)"></ellipse>
-              </svg>
-              <span class="step-number">3</span>
+              <div class="step svg-el">
+                <svg preserveAspectRatio="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="50" cy="50" rx="50" ry="50" fill="rgba(0,176,78,1)"></ellipse>
+                </svg>
+                <span class="step-number">3</span>
+              </div>
+
+              <p>Passado o tempo com a carne assando com a gordura para cima, vire a carne e deixe assar por mais 15
+                minutos. Sirva ainda quente.</p>
             </div>
-
-            <p>Passado o tempo com a carne assando com a gordura para cima, vire a carne e deixe assar por mais 15
-              minutos. Sirva ainda quente.</p>
           </div>
         </div>
       </amp-story-grid-layer>
@@ -938,12 +959,14 @@
       </amp-story-grid-layer>
 
       <amp-story-grid-layer template="vertical" id="ifpdr">
-        <div class="letterbox">
-          <div class="div-text">
-            <h2>Dica do Cozinha Demais</h2>
-            <p>Se preferir, use sal de parrilla para salgar a carne, que deve ser adicionado por último, ou seja, logo
-              após você passar a manteiga com o alho amassado na carne.
-            </p>
+        <div class="main-box">
+          <div class="letterbox">
+            <div class="div-text">
+              <h2>Dica do Cozinha Demais</h2>
+              <p>Se preferir, use sal de parrilla para salgar a carne, que deve ser adicionado por último, ou seja, logo
+                após você passar a manteiga com o alho amassado na carne.
+              </p>
+            </div>
           </div>
         </div>
       </amp-story-grid-layer>
@@ -963,12 +986,14 @@
       </amp-story-grid-layer>
 
       <amp-story-grid-layer template="vertical" id="ifpdr">
-        <div class="letterbox">
-          <div class="div-text">
-            <h2>Dica do Cozinha Demais</h2>
-            <p>Você também pode incrementar ainda mais a sua receita, com acompanhamentos como, por exemplo, arroz,
-              vinagrete e farofa.
-            </p>
+        <div class="main-box">
+          <div class="letterbox">
+            <div class="div-text">
+              <h2>Dica do Cozinha Demais</h2>
+              <p>Você também pode incrementar ainda mais a sua receita, com acompanhamentos como, por exemplo, arroz,
+                vinagrete e farofa.
+              </p>
+            </div>
           </div>
         </div>
       </amp-story-grid-layer>
@@ -986,7 +1011,7 @@
       </amp-story-grid-layer>
 
       <amp-story-grid-layer template="vertical" id="dumlp">
-        <div class="letterbox">
+        <div class="letterbox tela-final">
           <h2 class="ioxen pa">Gostou? Compartilhe!</h2>
           <p class="amcff pa">Mais receitas estão esperando por você no nosso site.</p>
           <div class="uiemw pa"><amp-img width="512" height="512" layout="responsive" class="img-fill pa"
