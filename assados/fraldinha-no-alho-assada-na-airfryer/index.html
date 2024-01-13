@@ -8,16 +8,6 @@
 
   <meta name="google-site-verification" content="7ZnoS6G8n4nfAhmkyDLyp5jVwVggGtvyueyw06zMOGs" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75PT6MVYD1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-75PT6MVYD1');
-  </script>
-
   <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -984,14 +974,29 @@
     </amp-story-page>
 
     <amp-story-auto-ads>
-      <script type="application/json">{
-    "ad-attributes": {
-     "type": "adsense",
-     "data-ad-client": "ca-pub-1709344535209706",
-     "data-ad-slot": "7679939308"
-    }
-   } </script>
+      <script type="application/json">
+        {
+          "ad-attributes": {
+          "type": "adsense",
+          "data-ad-client": "ca-pub-1709344535209706",
+          "data-ad-slot": "7679939308"
+          }
+        } 
+      </script>
     </amp-story-auto-ads>
+
+    <amp-analytics type="gtag" data-credentials="include">
+      <script type="application/json">
+        {
+          "vars" : {
+            "gtag_id": "G-75PT6MVYD1",
+            "config" : {
+              "G-75PT6MVYD1": { "groups": "default" }
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
   </amp-story>
 </body>
 
