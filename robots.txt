@@ -5,4 +5,4 @@ User-agent: *
 Disallow:
 Allow: /
 
-Sitemap: https://mundowebdev.github.io/cozinhademais/sitemap.xml
+Sitemap: https://webstories.cozinhademais.com.br/sitemap.xml
